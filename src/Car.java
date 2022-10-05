@@ -6,8 +6,14 @@ public class Car {
     String productionCountry;
     double engineVolume;
 
-    void show(){
-        System.out.println(brand + " " + model + ", " + productionYear + " год выпуска, страна сборки " +
-                productionCountry + ", цвет " + color + ", объем двигателя - " + engineVolume + " литра.");
+    Car(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry) {
+        this.brand = brand;
+        this.model = model;
+        this.engineVolume = engineVolume;
+        this.color = color;
+        this.productionYear = productionYear;
+        this.productionCountry = productionCountry;
+        System.out.println(brand + " " + model + ", " + productionYear + " год выпуска, страна сборки " + productionCountry + ", цвет кузова " + color + ", " +
+                "объем двигателя - " + engineVolume + " литра.");
     }
 }
